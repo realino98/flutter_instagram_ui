@@ -1,15 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/util/bubble_stories.dart';
 
-class UserHome extends StatefulWidget {
+class UserHome extends StatelessWidget {
   const UserHome({super.key});
 
   @override
-  State<UserHome> createState() => _UserHomeState();
-}
-
-class _UserHomeState extends State<UserHome> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Instagram"),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Icon(Icons.favorite),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Icon(Icons.message),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      body: Column(
+        children: [
+          //Stories
+          Container(
+            height: 150,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                BubbleStories(text: "Bernard"),
+                BubbleStories(text: "Alex"),
+                BubbleStories(text: "Winston"),
+                BubbleStories(text: "Brown"),
+                BubbleStories(text: "Kyle"),
+                BubbleStories(text: "Robinson"),
+              ],
+            ),
+          ),
+          //Feeds
+        ],
+      ),
+    );
   }
 }
