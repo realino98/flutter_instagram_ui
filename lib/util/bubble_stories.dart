@@ -14,9 +14,9 @@ class BubbleStories extends StatelessWidget {
           Container(
             height: 80,
             width: 80,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.grey,
+              color: Colors.grey[300],
             ),
           ),
           SizedBox(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_media/util/bubble_stories.dart';
+import 'package:social_media/util/user_posts.dart';
 
 class UserHome extends StatelessWidget {
   UserHome({super.key});
@@ -52,6 +53,9 @@ class UserHome extends StatelessWidget {
             ),
           ),
           //Feeds
+          UserPosts(
+            name: "Bernard",
+          ),
         ],
       ),
     );
