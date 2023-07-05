@@ -18,7 +18,7 @@ class _HomepageState extends State<Homepage> {
   }
 
   final List<Widget> _bodyPage = [
-    const UserHome(),
+    UserHome(),
     const Center(child: Text("Search")),
     const Center(child: Text("Add")),
     const Center(child: Text("Reels")),

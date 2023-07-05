@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:social_media/util/bubble_stories.dart';
 
 class UserHome extends StatelessWidget {
-  const UserHome({super.key});
+  UserHome({super.key});
+
+  final List people = [
+    "Bernard",
+    "Winston",
+    "Brown",
+    "Alex",
+    "Kyle",
+    "Robinson",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -34,16 +43,12 @@ class UserHome extends StatelessWidget {
           //Stories
           Container(
             height: 150,
-            child: ListView(
+            child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              children: [
-                BubbleStories(text: "Bernard"),
-                BubbleStories(text: "Alex"),
-                BubbleStories(text: "Winston"),
-                BubbleStories(text: "Brown"),
-                BubbleStories(text: "Kyle"),
-                BubbleStories(text: "Robinson"),
-              ],
+              itemCount: people.length,
+              itemBuilder: ((context, index) {
+                return BubbleStories(text: people[index]);
+              }),
             ),
           ),
           //Feeds
