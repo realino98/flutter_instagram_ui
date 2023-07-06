@@ -178,7 +178,6 @@ class AccountPage extends StatelessWidget {
                 BubbleStories(text: "Highlight 1"),
                 BubbleStories(text: "Highlight 2"),
                 BubbleStories(text: "Highlight 3"),
-                BubbleStories(text: "Highlight 4"),
               ]),
             ),
             TabBar(

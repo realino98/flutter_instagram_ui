@@ -18,6 +18,5 @@ class AccountTabGrid extends StatelessWidget {
         );
       },
     );
-    ;
   }
 }

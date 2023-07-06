@@ -18,6 +18,5 @@ class AccountTabReels extends StatelessWidget {
         );
       },
     );
-    ;
   }
 }

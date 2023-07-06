@@ -18,6 +18,5 @@ class AccountTabTags extends StatelessWidget {
         );
       },
     );
-    ;
   }
 }
