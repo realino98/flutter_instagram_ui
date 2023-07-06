@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:social_media/userhome.dart';
-import 'package:social_media/usersearch.dart';
+import 'package:social_media/pages/accounts.dart';
+import 'package:social_media/pages/userhome.dart';
+import 'package:social_media/pages/usersearch.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -23,7 +24,9 @@ class _HomepageState extends State<Homepage> {
     const UserSearch(),
     const Center(child: Text("Add")),
     const Center(child: Text("Reels")),
-    const Center(child: Text("Profile")),
+    AccountPage(
+      name: "bernard.realino",
+    ),
   ];
 
   @override
