@@ -39,7 +39,7 @@ class UserPosts extends StatelessWidget {
           color: Colors.grey[300],
         ),
         const Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(16.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
