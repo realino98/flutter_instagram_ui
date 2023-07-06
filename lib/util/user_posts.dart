@@ -55,7 +55,52 @@ class UserPosts extends StatelessWidget {
               Icon(Icons.bookmark),
             ],
           ),
-        )
+        ),
+        //Caption
+        Padding(
+          padding: const EdgeInsets.only(left: 16.0, top: 8),
+          child: RichText(
+            text: TextSpan(
+              style: TextStyle(color: Colors.black),
+              children: [
+                const TextSpan(
+                  text: "Liked by ",
+                ),
+                TextSpan(
+                  text: name,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                TextSpan(
+                  text: " and ",
+                ),
+                TextSpan(
+                  text: "others",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: 0, top: 8),
+          child: RichText(
+            text: TextSpan(
+              style: TextStyle(color: const Color.fromARGB(255, 14, 10, 10)),
+              children: [
+                TextSpan(
+                  text: name,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                const TextSpan(
+                  text: " ",
+                ),
+                TextSpan(
+                  text: "This is caption",
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
