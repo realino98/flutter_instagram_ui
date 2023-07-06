@@ -7,6 +7,7 @@ class UserPosts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
@@ -82,7 +83,7 @@ class UserPosts extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 0, top: 8),
+          padding: EdgeInsets.only(left: 16.0, top: 8),
           child: RichText(
             text: TextSpan(
               style: TextStyle(color: const Color.fromARGB(255, 14, 10, 10)),
