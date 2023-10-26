@@ -1,16 +1,21 @@
-# social_media
+# Flutter Instagram UI
+This is Instagram UI using Flutter with basic scrollable function
 
-A new Flutter project.
+## Features
++ Scrollable
++ 3 Pages: Home, Search Page, Profile Page
++ Using Models for Posts
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+### Homepage
+![image](https://github.com/realino98/flutter_instagram_ui/assets/63583418/e053fc01-5e70-4f09-bd22-1acd26562efd)
 
-A few resources to get you started if this is your first Flutter project:
+### Search
+![image](https://github.com/realino98/flutter_instagram_ui/assets/63583418/ec71108f-2f31-47f6-832c-75104b33ccb1)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Profile Page
+![image](https://github.com/realino98/flutter_instagram_ui/assets/63583418/7073b366-6688-474d-85b9-6f7fd5c3b5b1)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Thank You,
+Follow for more !
